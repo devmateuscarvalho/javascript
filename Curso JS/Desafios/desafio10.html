@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhaskara</title>
+  </head>
+  <body>
+    <h1>Resolvendo Bhaskara</h1>
+    <input type="button" value="Calcular" onclick="calcular()" />
+    <p>
+      Considerando uma equação no formato <strong>ax²+bc+c=0</strong> aperte o
+      botão acima para calcular o valor de Δ.
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <script>
+      function calcular() {
+        var a = parseFloat(prompt("Qual é o valor de A?"));
+        var b = parseFloat(prompt("Qual é o valor de B?"));
+        var c = parseFloat(prompt("Qual é o valor de C?"));
+        var delta = (b * b) - 4 * a * c;
+        var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        var equacaonaTela = document.getElementsByTagName('p')[0]
+        equacaonaTela.innerText = `A equação atual é ${a}x²+${b}x+2=0`
+        var calculonaTela = document.getElementsByTagName('p')[1]
+        calculonaTela.innerText = `O calculo realizado será Δ = ${b}-4*${a}*${c}`
+        var resultadonaTela = document.getElementsByTagName('p')[2]
+        resultadonaTela.innerText = `Δ=${delta}` 
+      }
+    </script>
+  </body>
+</html>

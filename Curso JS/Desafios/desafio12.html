@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preço mudou</title>
+  </head>
+  <body>
+    <h1>Preço mudou</h1>
+    <input type="button" value="Verificar" onclick="verifica()" />
+    <h2>Clique no botão acima para analisar a mudança de preço</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+      function verifica() {
+        var preçoAnterior = parseFloat(
+          prompt("Digite o preço anterior do produto")
+        );
+        var preçoAtual = parseFloat(prompt("Digite o preço atual do produto"));
+        
+       
+        if (preçoAtual > preçoAnterior) {
+        var diferencaPreco = preçoAtual - preçoAnterior
+        var porcentagemDiferenca = (diferencaPreco*100)/preçoAnterior 
+        var analisandoTela = document.getElementsByTagName('h2')[0]
+        analisandoTela.innerText = `Analisando os valores informados`
+        var custavaCusta = document.getElementsByTagName('p')[0]
+        custavaCusta.innerText = `O produto custava R$${preçoAnterior} e agora custa R$${preçoAtual}.`
+        var maisCaro = document.getElementsByTagName('p')[1]
+        maisCaro.innerText = `O produto está mais caro!`
+        var subiunaTela = document.getElementsByTagName('p')[2]
+        subiunaTela.innerText = `O preço subiu R$${diferencaPreco} em relação ao preço anterior.`
+        var variacaonaTela = document.getElementsByTagName('p')[3]
+        variacaonaTela.innerText = `Houve uma variação de ${porcentagemDiferenca}% para cima.`
+        }
+        else {
+       
+       var diferencaPreco = preçoAnterior - preçoAtual
+       var porcentagemDiferenca = (diferencaPreco*100)/preçoAtual
+       
+       
+       
+        var analisandoTela = document.getElementsByTagName('h2')[0]
+        analisandoTela.innerText = `Analisando os valores informados`
+        var custavaCusta = document.getElementsByTagName('p')[0]
+        custavaCusta.innerText = `O produto custava R$${preçoAnterior} e agora custa R$${preçoAtual}.`
+        var maisBarato = document.getElementsByTagName('p')[1]
+        maisBarato.innerText = `O produto está mais barato!`
+        var subiunaTela = document.getElementsByTagName('p')[2]
+        subiunaTela.innerText = `O preço caiu R$${diferencaPreco} em relação ao preço anterior.`
+        var variacaonaTela = document.getElementsByTagName('p')[3]
+        variacaonaTela.innerText = `Houve uma variação de ${porcentagemDiferenca}% para baixo.`
+
+
+        }
+      }
+    </script>
+  </body>
+</html>

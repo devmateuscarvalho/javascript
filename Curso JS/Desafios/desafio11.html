@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Descubra se o ano é bissexto ou não</h1>
+<input type="button" value="Bissexto?" onclick="bissexto()">
+
+
+    <script>
+      
+     function bissexto(){
+     var solicitaAno = parseInt(prompt('Digite um ano para saber se é ou não bissexto!'))  
+     var calculoAno = solicitaAno%4
+     if (calculoAno == 0){
+         alert(`O ano de ${solicitaAno} é bissexto!`)
+     }  
+     else {
+         alert(`O ano de ${solicitaAno} não é bissexto!`)
+     }
+     }
+    </script>
+</body>
+</html>
