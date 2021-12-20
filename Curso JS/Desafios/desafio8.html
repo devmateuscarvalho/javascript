@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+</head>
+<body>
+    <h1>Calcular Desconto</h1>
+    <input type="button" value="Desconto de 10%" onclick="desconto()">
+    <p>Clique no botão acima para iniciar.</p>
+    <p></p>
+    <p></p>
+
+
+
+    <script>
+     function desconto(){
+     var produto = prompt("Qual produto está sendo comprado?")
+     var preço = parseFloat(prompt(`Qual o preço dx ${produto}`))
+     var preçonaTela = document.getElementsByTagName('p')[0]
+    preçonaTela.innerText = `O preço dx ${produto} era de ${preço}R$!`
+     var desconto = preço/10
+     var descontonaTela = document.getElementsByTagName('p')[1]
+     descontonaTela.innerText =`O valor do desconto é de ${desconto}R$!`
+
+     var preçoFinal = document.getElementsByTagName('p')[2]
+     preçoFinal.innerText = `O valor final do ${produto} com desconto é de ${preço - desconto}R$!`
+     
+     }
+
+
+
+    </script>
+</body>
+</html>

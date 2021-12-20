@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas!</title>
+</head>
+<body>
+    <h1>Conversor de medidas</h1>
+    <input type="button" value="Converter" onclick="conversao()">
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        function conversao(){
+        var metros = parseFloat(prompt('Digite uma distância em metros(m)'))
+        var km = metros * 1000
+        var hm = metros * 100
+        var dam = metros * 10
+        var mm = metros / 1000
+        var cm = metros /100
+        var dm = metros /10
+        
+
+        var metrosnatela = document.getElementsByTagName('h2')[0]
+        metrosnatela.innerText = `A distância de ${metros} metros, corresponde a...`
+
+        var kmnatela = document.getElementsByTagName('p')[0]
+        kmnatela.innerText = `${km} quilometros`
+        var hmnatela = document.getElementsByTagName('p')[1]
+        hmnatela.innerText= `${hm} hectômetros`
+        var damnatela = document.getElementsByTagName('p')[2]
+        damnatela.innerText = `${dam} decâmetros`
+        var mmnatela = document.getElementsByTagName('p')[3]
+        mmnatela.innerText = `${mm} milimetros`
+        var cmnatela = document.getElementsByTagName('p')[4]
+        cmnatela.innerText = `${cm} centimetros`
+        var dmnatela = document.getElementsByTagName('p')[5]
+        dmnatela.innerText = `${dm} decimetros`
+        
+            }
+    </script>
+</body>
+</html>

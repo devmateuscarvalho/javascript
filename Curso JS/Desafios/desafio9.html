@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste</title>
+</head>
+<body>
+    <h1>Reajuste Salárial</h1>
+    <input type="button" value="Reajustar Salário" onclick="reajuste()">
+    <p>Clique no botão acima para iniciar.</p>
+    <p></p>
+    <p></p>
+    
+
+    <script>
+    function reajuste(){
+    var nome = prompt('Digite seu nome')
+    var salarioAtual = parseFloat(prompt('Digite o seu salário atual'))
+    var porcentagem = parseInt(prompt('Digite a porcentagem que será aplicada ao aumento salarial'))
+    var porcentagemFinal = parseFloat(porcentagem/100)
+    var porcentagemSalario = parseFloat(salarioAtual * porcentagemFinal)
+    var salarioFinal = salarioAtual + porcentagemSalario
+
+
+    var salarionaTela = document.getElementsByTagName("p")[0]
+    salarionaTela.innerText = `O salário inicial era de R$${salarioAtual}`
+
+    var salarioePorcentagem = document.getElementsByTagName("p")[1]
+    salarioePorcentagem.innerText = `Com aumento de ${porcentagem}%, o salário vai aumentar R$${porcentagemSalario} no próximo mês.`
+
+    var salariocomAumento = document.getElementsByTagName("p")[2]
+    salariocomAumento.innerText = `E a partir daí, ${nome} vai passar a ganhar R$${salarioFinal}`
+    
+    
+    }
+
+    </script>
+</body>
+</html>

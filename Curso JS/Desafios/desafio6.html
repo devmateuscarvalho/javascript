@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+</head>
+<body>
+    <h1>Conversor de temperatura</h1>
+    <input type="button" value="Converter" onclick="conversor()">
+    <p>Clique no botão acima para iniciar</p>
+    <p>
+    
+    </p>
+    <p></p>
+
+ <script>
+function conversor(){
+    var celsius = parseFloat(prompt(`Digite a temperatura em Celsius`))
+    var fahrenheit = (celsius*1.8)+32
+    var kelvin = celsius + 273.15
+
+    var celsiusnaTela = document.getElementsByTagName('p')[0]
+    celsiusnaTela.innerText = `A temperatura de ${celsius} Celsius corresponde a...`
+    var fahrenheitnaTela = document.getElementsByTagName('p')[1]
+    fahrenheitnaTela.innerText = `${fahrenheit} Fahrenheit`
+    var kelvinnaTela = document.getElementsByTagName('p')[2]
+    kelvinnaTela.innerText = `${kelvin} Kelvin`
+
+}
+
+ </script>
+
+
+</body>
+</html>
