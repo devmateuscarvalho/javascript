@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    font-family: 'Chakra Petch', sans-serif; 
+}
+html {
+ background: black;
+}
+.imageNotebook{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.inicio {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+/* Linha -> header*/
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+      
+
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: green;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.header li {
+    margin: 30px;
+    text-decoration: none;
+
+}
+
+/*Linha -> quem eu sou*/
+
+.quemeusou {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.seta-cima
+
+/*informacoes*/
+.informacoes {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.informacoes h1 {
+    font-size: 4rem;
+}
+
+.informacoes h1:hover {
+    font-size: 4.1rem;
+    color: green;
+}
+
+.informacoes p {
+    font-size: 1.4rem;
+        
+}
+
+.informacoes ul {
+    font-size: 1.2rem;
+    margin-bottom: 150px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.github {
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.github:hover {
+    color: gold;
+    text-decoration: none;
+}
+
+.informacoes a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Foto*/
+.icone{
+width: 21vw;
+height: auto;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    background-color: green;
+    border-radius: 300px;
+    order: 0;
+    margin-right: 10vw;
+    
+
+}
+
+.foto:hover {
+    background-color: orangered;
+    box-shadow: orangered;
+
+}
+
+.foto img {
+    width: 21vw;
+    height: auto;
+    border-radius: 300px;
+
+
+
+}
+
+.foto img:hover {
+    filter: blur(0.2vw);
+}
+
+/* Linha -> projetos*/
+.projetos {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-size: cover;
+}
+
+.tituloprojetos {
+    color: white;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    flex-wrap: nowrap;
+}
+.tituloprojetos h1:hover{
+    color:green;
+}
+
+.slideshow {
+    margin-top: 50px;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+}
+
+/* Linha -> Habilidades */
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 100vw;
+    
+}
+.habilidades h1:hover{
+    color: green;
+}
+.habilidades h2 {
+    font-size: 1.7rem;
+
+}
+
+.habilidades p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.bolotas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.titulohabilidades {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 100px;
+}
+
+.webdesign {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 20vw;
+    height: 40vh;
+    background-color: gold;
+    flex-direction: column;
+    border-radius: 300px;
+    padding: 10px;
+
+}
+
+.webdesign:hover {
+    background-color: white;
+}
+
+.backend {
+    width: 20vw;
+    height: 40vh;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 300px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.backend:hover {
+    background-color: white;
+}
+
+.appmobile {
+    width: 20vw;
+    height: 40vh;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 300px;
+    padding: 10px;
+
+
+}
+
+.appmobile:hover {
+    background-color: white;
+}
+
+/* Linha -> Contato */
+.contato{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    width: 100vw;
+    
+    
+}
+.contato h1{
+    color: white;
+    margin-top: -180px;
+
+}
+.contato h1:hover{
+    color: green;
+  
+
+}
+.titulocontato{
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.redeseformulario{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.redes{
+background-color: black;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+color: white;
+margin-top: 150px;
+
+}
+.redessociais{
+width: 20vw;
+height: 50px;
+display: flex;
+
+border-radius: 10px;
+border-bottom: 0;
+margin-bottom: 10px;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.redessociais img{
+    width: 70px;
+    height: auto;
+    padding-right: 20px;
+}
+
+.email{
+height: 100px;
+display: flex;
+align-items: center;
+
+color: black;
+
+}
+.email h2{
+    margin-left: 20px;
+    color: white;
+    font-size: 1.4rem;
+
+}
+.email p{
+    margin-bottom: 20px;
+    font-size: 1rem;
+    
+    color: white;
+}
+.telefone{
+width: 25vw;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+font-size: 1rem;
+
+}
+.telefone h2{
+margin-left: 20px;
+margin-bottom: 25px;
+
+}
+.circulo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulotelefone{
+    margin-bottom: 30px;
+}
+
+.circuloredes img{
+    margin-top: 9px;
+    margin-right: 2px;
+}
+.redessociais h2{
+    margin-left: 20px;
+}
+/*Cadastro*/
+
+.cadastro{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    
+    }
+
+.cadastro label{
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 40px;
+}
+
+.cadastro legend{
+color: white;
+font-size: 1.5rem;
+margin-bottom: 15px;
+}
+
+
+.containerFieldset{
+margin-bottom: 500px;
+}
+.cadastro fieldset{
+    width: 25vw;
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+    
+}
+.cadastro textarea{
+    width: 95%;
+    height: 100%;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 30px;
+    resize: none;
+}
+.cadastro input{
+    color: white;
+    font-size: 1.2rem;
+    border: solid white;
+    background: none;
+    border-radius: 60px;
+    padding: 8px;
+    justify-content: center;
+}
+#formulario input.campo_nome
+{
+    width: 70%;
+
+
+}
+#formulario input.campo_telefone
+{
+    width: 66%;
+
+
+
+}
+
+#formulario input.campo_email
+{
+width: 71%;
+
+}
+.btn_submit{
+
+margin: 0;
+padding: 0;
+width: 100%;
+
+}
+.btn_submit:hover{
+background-color: green;
+color: black;
+    }
+#formulario input.btn_submit{
+    margin-left: 0px;
+    border-left: none;
+border-right: none;
+margin-left: 70%;
+width: 25%;
+}
+
+.seta-cima{
+  position: fixed;
+  bottom: 20px;
+  
+  margin-left: 50px;
+
+}
+
+@media (max-width: 425px){
+    html{font-size: 0.5rem;
+        width: 100%;
+        max-width: 320px;
+    
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;  
+        max-width: 100%;     
+        
+
+    }
+    .header ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.6rem;
+        margin-right: 30px;
+        padding: 0;
+        width: 100%;
+        text-decoration: underline;
+        
+    }
+    .icone{
+        width: 30vw;
+    }
+    .foto {
+        margin-top: 50px;
+        margin-right: 30px;
+        width: 30vw;
+
+    }
+    .foto img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        border-radius: 300px;
+    }
+    .quemeusou {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        color: white;
+        margin-left: 30px;
+        margin-top: 50px;
+}
+     .informacoes h1 {
+    font-size: 2.6rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.informacoes h1:hover {
+    font-size: 2.6rem;
+    
+    margin-bottom: 10px;
+}
+.seta-cima {
+    display: none;
+}
+.slideshow {
+    width: 90%;
+}
+.habilidades{
+height: 100vh;
+justify-content: flex-start;
+
+}
+.titulohabilidades{
+    margin-bottom: 200px;
+}
+.bolotas {
+flex-direction: column;
+width: 100vw;
+height: 20vh;
+}
+.bolotas p{
+    font-size: 1.6rem;
+
+}
+.bolotas h2{
+    font-size: 2rem;
+
+}
+.webdesign{
+    margin-top: 40px;
+    width: 40vw;
+    height: 60vh;
+    padding: 15px;
+    border-radius: 500px;
+    
+}
+.backend{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40vw;
+    height: 60vh;
+    padding: 15px;
+    border-radius: 500px;
+}
+.appmobile{
+    width: 40vw;
+    height: 60vh;
+    padding: 15px;
+    border-radius: 900px;
+}
+.contato{
+ margin: 0;
+ height: 40vh;
+
+}
+.contato h1{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.redeseformulario{
+    flex-direction: column;
+    justify-content: center;   
+}
+.redes{
+    margin-top: 0px;
+    margin-left: 30px;
+}
+.email{
+    display: none;
+}
+.telefone{
+    display: none;
+}
+.cadastro{
+    margin-top: 40px;
+    justify-content: center;
+    margin-right: 100px;
+}
+#formulario input.campo_nome
+{
+    width: 150%;
+
+
+}
+#formulario input.campo_telefone
+{
+    width: 150%;
+
+
+
+}
+
+#formulario input.campo_email
+{
+width: 150%;
+
+}
+.btn_submit{
+margin-left: 100px;
+padding: 0;
+width: 100%;
+
+}
+
+.cadastro textarea{
+    width: 160%;
+    height: 100%;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 30px;
+    resize: none;
+}
+.cadastro legend{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    width: 100px;
+    }
+.cadastro fieldset{
+    width: 40vw;
+}
+}
