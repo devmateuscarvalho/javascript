@@ -1,0 +1,93 @@
+git config --global user.name "nome"
+git config --global user.email "email@email.col"
+
+git config --list
+
+
+
+CRIANDO NOVO REPOSITORIO
+
+1) git init  (cria arquivos .git ocultos)
+
+2) git status
+
+3) git add . (adiciona todos)
+   git add nomearquivo.txt (adiciona só o arquivo)
+
+4) git commit -m "descrição do commit"
+
+
+
+VISUALIZANDO OS LOGS
+
+1) git log (mostra os commits)
+
+2) git log --pretty=oneline
+
+3) git log --stat
+
+
+
+VISUALIZAND AS DIFERENÇAS
+
+1) git diff (mostra diferenças) branch ou idCommit
+2) git shortlog
+
+
+
+ADD ALTERAÇÕES EM COMMIT RECEM FEITO
+
+1) git add .
+
+2) git commit --amend
+
+Assim voce ira alterar o commit recem feito e não precisará criar outro
+
+
+
+RESETAR MUDANÇAS
+
+1) git status
+
+2) git reset HEAD nome-do-arquivo 
+
+3) git checkout -- nomearquivo (volta o arquivo para versão anterior)
+
+
+-------------------------
+BRANCHS (ramos)
+
+CRIAR NOVA BRANCH
+
+git branch (mostra as branchs)
+git branch nomedabranch (cria uma com o nome escolhido)
+
+
+
+COMO MUDAR A BRANCH
+
+git checkout nomedabranch ou idCommit (vai para a branch)
+git add .
+git commit -m "nome do commit"
+
+
+COMO DELETAR A BRANCH
+
+git branch -D nomedabranch
+
+
+MERGE (envia uma branch pra outra)
+
+git checkout master (nome da branch que deseja estar)
+git merge nomeDaBranch (nome da branch que se deseja copiar para a sua branch atual) - local
+
+RESETAR MERGE
+
+git reset --hard HEAD~1 (volta ao commit anterior)
+git reset --hard codigo_do_commit (volta ao desejado)
+
+git push --force (força a atualizacao depois de resetar)
+
+ATUALIZANDO
+
+git pull origin nomeDaBranch

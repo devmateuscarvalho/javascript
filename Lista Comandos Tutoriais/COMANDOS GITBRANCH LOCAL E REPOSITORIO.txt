@@ -1,0 +1,92 @@
+COMANDOS JUNTAR BRANCH
+
+** APENAS LOCAL **
+
+ETAPA 1
+
+1) git branch 
+
+2) git branch novabranch 
+
+3) git checkout novabranch 
+
+4)
+
+** realiza modificações ou cria arquivos **
+
+5) git add .
+
+6) git commit -m "meu commit"
+
+
+ETAPA 2
+
+7) volte para a BRANCH PRINCIPAL (geralmente master ou main)
+
+8) git checkout main
+
+9) git merge novabranch 
+
+
+DELETAR COMMITS
+
+git reset --hard HEAD~1 (volta ao commit anterior)
+git reset --hard idDoCommit (volta ao commit com o ID INFORMADO, digite git log para descobrir os ids)
+
+
+----------------------------
+USANDO REPOSITÓRIO
+
+ENVIANDO AO REPOSITÓRIO
+
+1) git branch 
+
+2) git branch novabranch 
+
+3) git checkout novabranch 
+
+4)
+
+** realiza modificações ou cria arquivos **
+
+5) git add .
+
+6) git commit -m "meu commit"
+
+7) git push --set-upstream origin novabranch ****** só é necessário esse comando na primeira vez, depois use apenas git push
+
+
+PEGANDO CONTEUDO DE OUTRAS BRANCHS DO REPOSITÓRIO PARA COLOCAR NA MAIN
+
+1) voce deve criar localmente (se ainda não existir) as branchs que deseja fazer o merge para o a branch main.
+
+por exemplo:
+
+git branch gui
+
+2) git checkout gui
+
+3) git pull origin gui
+
+4) git checkout main
+
+5) git merge gui
+
+6) git push
+
+** se por acaso o terminal exibir uma janela do git pedindo para adicionar uma msg digite na ordem:
+I) a tecla i
+II) escreva a msg
+III) aperte esc
+IV) digite -> :wq
+
+aperte enter
+
+DELETAR COMMITS
+
+git reset --hard HEAD~1 (volta ao commit anterior)
+git reset --hard idDoCommit (volta ao commit com o ID INFORMADO, digite git log para descobrir os ids)
+
+git push --force
+
+
